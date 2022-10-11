@@ -4,43 +4,49 @@
 <head>
     <title>Python Pros</title>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Website for the guild of Python Pros" />
     <link href="./static/logo.png" rel="icon" />
-    <!-- Daisy UI + Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <meta name="og:title" content="Python Pros" />
+    <meta name="og:description" content="Website for the guild of Python Pros" />
+    <meta name="og:image" content="./static/logo.png" />
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2f31918fd1.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-[#202124] min-h-screen">
-    <header class="text-gray-200 body-font border-b bg-[#121215]">
+<body class="bg-[#202124] min-h-screen" style="background-image: url(./static/bg.svg);">
+    <header class="text-gray-200 body-font bg-[#23395d]">
         <div class="container px-6 flex py-3 flex-row items-center justify-between">
-            <a class="flex title-font font-medium items-center mb-0">
+            <a class="flex title-font font-medium items-center mb-0 cursor-pointer" href="#">
                 <img src="./static/logo.svg" width="42" height="42" />
                 <p class="ml-3 text-2xl">Python Pros</p>
             </a>
             <nav class="ml-auto flex flex-wrap items-center">
-                <a class="mr-6 hover:text-[#fcd56c]" href="#">
-                    <i class="fa-solid fa-house mr-2"></i>
+                <a class="mx-2 hover:text-[#fcd56c]" href="#">
+                    <i class="fa-solid fa-house mr-2 hidden md:inline-block md:mr-0"></i>
                     Home
                 </a>
-                <a class="mr-6 hover:text-[#fcd56c]" href="./challenge/index.html">
-                    <i class="fa-solid fa-shield-halved mr-2"></i>
+                <a class="mx-2 hover:text-[#fcd56c]" href="./challenge/">
+                    <i class="fa-solid fa-shield-halved mr-2 hidden md:inline-block md:mr-0"></i>
                     Challenge
                 </a>
-                <a class="mr-6 hover:text-[#fcd56c]" href="./schedule/index.html">
-                    <i class="fa-regular fa-calendar-check mr-2"></i>
+                <a class="mx-2 hover:text-[#fcd56c]" href="./schedule/">
+                    <i class="fa-regular fa-calendar-check mr-2 hidden md:inline-block md:mr-0"></i>
                     Schedule
                 </a>
             </nav>
         </div>
     </header>
 
-    <div class="hero min-h-screen text-grey-900">
-        <div
-            class="bg-blue-300 w-full md:w-[540px] lg:w-1/2 border rounded-xl flex flex-col justify-between align-center px-6 py-8 z-20">
+    <div class="grid min-h-screen place-items-center text-grey-900">
+        <div style="backdrop-filter: blur(6px);"
+            class="bg-blue-200 bg-opacity-50 w-full md:w-[540px] lg:w-1/2 rounded-xl flex flex-col justify-between align-center px-4 md:px-6 py-8 z-20 shadow-md hover:shadow-xl">
             <h1 class="text-[#202124] text-5xl font-semibold mb-6">
                 Welcome to the Python Pros!
             </h1>
@@ -48,12 +54,12 @@
                 We are a group of Python enthusiasts who are passionate about learning and teaching Python.
             </p>
             <p class="text-[#202124] text-xl mb-3">
-                Join our Discord for further news and announcements
+                Join our Discord for further news, announcements, lots of fun and games!
             </p>
             <!-- give discord link  -->
             <div class="flex justify-around">
                 <a href="https://discord.gg/y8NWaEYe" target="_blank"
-                    class="bg-[#6d2aff] text-white text-xl px-4 py-2 rounded-lg mt-6 hover:bg-[#651fff]">
+                    class="bg-[#6d2aff] text-white text-xl px-4 py-2  border border-[#651fff] rounded-lg mt-6 hover:bg-[#651fff] hover:border-violet-500">
                     <i class="fa-brands fa-discord mr-4"></i>
                     Discord
                 </a>
