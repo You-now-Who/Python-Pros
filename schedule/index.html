@@ -22,14 +22,14 @@
     }
 </style>
 
-<body class="font-quicksand bg-[#202124] min-h-screen" style="background-image: url(../static/bg.svg);">
+<body class="h-screen overflow-y-hidden font-quicksand bg-[#202124]" style="background-image: url(../static/bg.svg);">
     <header class="text-gray-200 body-font bg-[#23395d]">
-        <div class="container px-6 flex py-3 flex-row items-center justify-between">
-            <a class="flex title-font font-medium items-center mb-0 cursor-pointer" href="../">
+        <div class="container px-6 block md:flex py-6 md:py-3 flex-column md:flex-row tems-center md:justify-between">
+            <a class="flex title-font font-medium items-center mb-4 md:mb-0 cursor-pointer" href="#">
                 <img src="../static/logo.svg" width="42" height="42" />
-                <p class="ml-3 text-2xl">Python Pros</p>
+                <p class="ml-3 text-3xl md:text-2xl">Python Pros</p>
             </a>
-            <nav class="ml-auto flex flex-wrap items-center">
+            <nav class="ml-auto flex flex-row md:flex-wrap items-center">
                 <a class="mx-2 hover:text-[#fcd56c]" href="../">
                     <i class="fa-solid fa-house mr-2 hidden md:inline-block md:mr-0"></i>
                     Home
@@ -38,17 +38,18 @@
                     <i class="fa-solid fa-shield-halved mr-2 hidden md:inline-block md:mr-0"></i>
                     Challenge
                 </a>
-                <a class="mx-2 hover:text-[#fcd56c]" href="#">
+                <a class="mx-2 text-[#fcd56c]" href="#">
                     <i class="fa-regular fa-calendar-check mr-2 hidden md:inline-block md:mr-0"></i>
                     Schedule
                 </a>
             </nav>
         </div>
     </header>
-    <div class="grid min-h-screen place-items-center text-grey-900">
+
+    <div class="h-full mt-32 md:grid md:place-items-center text-grey-900">
         <div style="backdrop-filter: blur(6px);"
-            class="bg-blue-200 bg-opacity-50 w-full md:w-[540px] lg:w-1/2 rounded-xl flex flex-col justify-between align-center px-4 md:px-6 py-8 z-20 shadow-md hover:shadow-xl">
-            <h1 class="text-[#202124] text-5xl font-semibold mb-6">
+            class="bg-blue-200 bg-opacity-50 w-full md:w-[540px] lg:w-1/2 md:rounded-xl flex flex-col justify-between align-center px-4 md:px-6 py-8 z-20 shadow-md hover:shadow-xl">
+            <h1 class="text-[#202124] text-5xl font-semibold mb-6 text-center">
                 Coming soon!
             </h1>
         </div>
