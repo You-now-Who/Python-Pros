@@ -8,7 +8,6 @@
     <meta name="description" content="Website for the guild of Python Pros" />
     <link href="../static/logo.png" rel="icon" />
     <!-- Daisy UI + Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2f31918fd1.js" crossorigin="anonymous"></script>
@@ -22,23 +21,23 @@
     }
 </style>
 
-<body class="h-screen overflow-y-hidden font-quicksand bg-[#202124]" style="background-image: url(../static/bg.svg);">
+<body class="min-h-screen font-quicksand bg-[#202124]" style="background-image: url(../static/bg.svg);">
     <header class="text-gray-200 body-font bg-[#23395d]">
         <div class="container px-6 block md:flex py-6 md:py-3 flex-column md:flex-row tems-center justify-around md:justify-between">
             <a class="flex title-font font-medium items-center mb-4 md:mb-0 cursor-pointer" href="#">
                 <img src="../static/logo.svg" width="42" height="42" />
-                <p class="ml-3 text-3xl md:text-2xl">Python Pros</p>
+                <p class="ml-3 text-3xl">Python Pros</p>
             </a>
             <nav class="ml-auto flex flex-row md:flex-wrap items-center justify-around">
                 <a class="mx-0 md:mx-3 hover:text-[#fcd56c]" href="../">
                     <i class="fa-solid fa-house hidden md:inline-block md:mr-1"></i>
                     Home
                 </a>
-                <a class="mx-0 md:mx-3 text-[#fcd56c]" href="../challenge/">
+                <a class="mx-0 md:mx-3 hover:text-[#fcd56c]" href="../challenge/">
                     <i class="fa-solid fa-shield-halved hidden md:inline-block md:mr-1"></i>
                     Challenge
                 </a>
-                <a class="mx-0 md:mx-3 hover:text-[#fcd56c]" href="#">
+                <a class="mx-0 md:mx-3 text-[#fcd56c]" href="#">
                     <i class="fa-regular fa-calendar-check hidden md:inline-block md:mr-1"></i>
                     Schedule
                 </a>
@@ -46,7 +45,7 @@
         </div>
     </header>
 
-    <div class="h-full mt-32 md:grid md:place-items-center text-grey-900">
+    <div class="h-full flex justify-center mt-16 md:mt-32 text-grey-900">
         <div style="backdrop-filter: blur(6px);"
             class="bg-blue-200 bg-opacity-50 w-full md:w-[540px] lg:w-1/2 md:rounded-xl flex flex-col justify-between align-center px-4 md:px-6 py-8 z-20 shadow-md hover:shadow-xl">
             <h1 class="text-[#202124] text-5xl font-semibold mb-6 text-center">
